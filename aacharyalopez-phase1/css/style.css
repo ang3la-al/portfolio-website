@@ -1,0 +1,251 @@
+/* page layouts */
+.index-container {
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto;
+    display: grid;
+    grid-template-areas: 
+    'navigation navigation navigation'
+    'about about about'      
+    'login login login'
+    'skills skills contact'
+    'footer footer footer';
+    gap: 0rem;
+}
+
+.education-container {
+    display: grid;
+    grid-template-areas: 
+    'navigation'
+    'education'
+    'footer';
+    gap: 0rem;
+}
+
+.experience-container {
+    display: grid;
+    grid-template-areas: 
+    'navigation'
+    'experience'
+    'footer';
+    gap: 0rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-areas: 
+    'navigation'
+    'projects'
+    'footer';
+    gap: 0rem;
+}
+
+.login-container {
+    display: grid;
+    grid-template-areas: 
+    'navigation'
+    'login'
+    'footer';
+    gap: 0rem;
+}
+
+.viewPost-container {
+    display: grid;
+    grid-template-areas: 
+    'navigation'
+    'blog'
+    'footer';
+    gap: 0rem;
+}
+
+.addPost-container {
+    display: grid;
+    grid-template-areas: 
+    'navigation'
+    'blog'
+    'footer';
+    gap: 0rem;
+}
+
+/* navigation styles */
+header {
+    grid-area: navigation;
+    width: 100%;
+    background-color: darkgrey;
+}
+
+body{
+    background-color: lightgrey;
+    font-family: "Anta", sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.name{
+    color: white;
+    font-size: 1.8em;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0.8em;
+    font-size: 1.2em;
+}
+
+nav ul li a{
+    color: black;
+}
+
+nav ul li a:hover{
+    color: white; 
+}
+
+/*button styles */
+.button {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border: none;
+    border-radius: 1.25em;
+}
+.login-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em; 
+    grid-area: login;
+}
+
+.button:hover {
+    background-color: darkgrey;
+}
+
+/* about styles */
+#about {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    font-size: 1.2em;
+    grid-area: about;
+}
+
+#about section {
+    text-align: center; 
+}
+
+#contact {
+    grid-area: contact;
+}
+
+/*education styles */
+#education {
+    grid-area: education;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#education strong{
+    font-size: 1.2em;
+}
+
+/*experience styles */
+#experience {
+    grid-area: experience;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#experience strong{
+    font-size: 1.2em;
+}
+
+#projects {
+    grid-area: projects;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills {
+    grid-area: skills;
+}
+
+.viewPost-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.login, .blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkgrey;
+    padding: 2em;
+    border-radius: 1.5em;
+}
+
+.login input[type=email], .login input[type=password], .blog input[type=text], .blog textarea {
+    width: 100%;
+    padding: 1.25em;
+    border: none;
+    margin: 0 auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+
+.buttons input[type=submit], .buttons input[type=reset] {
+    background-color: white;
+    padding: 0.5em;
+    border: none;
+    border-radius: 1.25em;
+}
+
+.buttons input[type=submit]:hover, .buttons input[type=reset]:hover {
+    background-color: lightgrey;
+}
+
+/*footer styles */
+footer {
+    grid-area: footer;
+    background-color: darkgrey;
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.7em;
+    margin-top: 1.5em;
+}
+
+figcaption {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    font-style: normal;
+}
