@@ -249,3 +249,37 @@ figcaption {
     font-size: 0.9em;
     font-style: normal;
 }
+
+/* blog post styles */
+hr {
+    width: 50%;
+}
+
+/*add post form validation*/
+.empty {
+    border: 1px solid red;
+}
+
+/*preview styles*/
+.centered-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#upload-button, #edit-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 1em 0.5em;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 1em;
+}
+
+#upload-button:hover, #edit-button:hover {
+    background-color: darkgrey;
+}
+
+

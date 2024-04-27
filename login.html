@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add post</title>
+    <title>Log in</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:768px)">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <div class = "addPost-container">
 
+    <div class = "login-container">
         <header>
             <nav id = "navigation">
                 <h2 class ="name">Angela Acharya Lopez</h2>
@@ -25,39 +26,38 @@
                     <li><a href="experience.html">Experience</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="index.html">Contact</a></li>
-                    <li><a href="viewPost.html">Blog</a></li>
+                    <li><a href="viewPost.php">Blog</a></li>
                 </ul>
             </nav>
         </header>
-        
-        <form method="POST" action="">
-            <h1>Add new post</h1>
-            <fieldset class="blog">
+        <form method="POST" action="login.php">
+            <h1>Login</h1>
+            <fieldset class = "login">
                 <div>
-                    <label>Title:</label>
+                    <label>Email Address:</label>
                     <br>
-                    <input type="text" name="title" required>
+                    <input type ="email" name ="email" required>
                 </div>
                 
-                <div class="content">
-                    <label>Enter text here:</label>
+                <div class="telephone">
+                    <label>Password:</label>
                     <br>
-                    <textarea name="content" required></textarea>
+                    <input type ="password" name ="password" required>
                 </div>
-        
+
                 <div class="buttons">
-                    <input type="submit" value="Post">
+                    <input type="submit">
                     <input type="reset" value="Clear Form">
                 </div>
             </fieldset>
         </form>
 
+        
         <br>
-        <br>
+
         <footer>
             <p>Angela Acharya Lopez - 2024©</p>
         </footer>
     </div>
-
 </body>
 </html>
