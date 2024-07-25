@@ -1,5 +1,5 @@
 # My Portfolio Website
-This repository contains the source code for my portfolio website - built using HTML, CSS, JavaScript, and PHP. The website includes information about me, my skills, education, experience, projects, and a functional blog where I share my experiences.
+This repository contains the source code for my 1st year university portfolio website project - built using HTML, CSS, JavaScript, and PHP. The website includes information about me, my skills, education, experience, projects, and a functional blog where I share my experiences.
 
 ## How to Use
 To use my website, follow these steps:
@@ -18,5 +18,5 @@ The website's homepage is `index.html`. From here you can navigate throughout al
 - Used PHP for the server-side processing, such as validating the login using phpMyAdmin database, creating/viewing the blog posts.
 - Used JavaScript for validation and local storage functionality for previewing blog posts.
 
-## Contact
-For any questions or suggestions, you can reach out to me via the contact information provided on the `index.html` page.
+## Contact Me
+For any questions, suggestions, or if you would like to contact me, you can reach out to me via the contact information provided on the `index.html` page.
